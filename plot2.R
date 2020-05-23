@@ -16,5 +16,5 @@ HPCglobalActivePower <- as.numeric(HPCsubSet$Global_active_power)
 png("plot2.png", width=480, height=480)
 
 #Generating Histogram
-plot(datetime, globalActivePower, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+plot(datetime, HPCglobalActivePower, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()
