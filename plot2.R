@@ -7,7 +7,7 @@ data <- read.table(HPCdatatable, header=TRUE, sep=";", stringsAsFactors=FALSE, d
 #selecting data points between 1/2/2007 and 2/2/2007
 HPCsubSet <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
-datetime <- strptime(paste(subSetData$Date, subSetData$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
+datetime <- strptime(paste(HPCsubSet$Date, HPCsubSet$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
 
 #reading Global_active_power column
 HPCglobalActivePower <- as.numeric(HPCsubSet$Global_active_power)
